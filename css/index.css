@@ -1,0 +1,283 @@
+/*--------------------------- CONTENIDO DE TODO (ANUNCIOS) ---------------------- */
+.ads {
+    width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/*-------------------------- TEXTO DE "DESCUBRIR"--------------------------*/
+.caption {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.caption p {
+    text-align: center;
+    color: #777777;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.caption p i {
+    margin-left: 5px;
+}
+
+
+/*--------------------------- SEPARADOR (LINEA AZUL) ---------------------- */
+
+.see-products {
+    width: 100%;
+    *box-shadow: -10px 0 20px -30px black;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.see-products:before {
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #46a2fd;
+}
+
+
+/*----------------------------- ANUNCIOS (VER PRODUCTOS) -------------------------*/
+
+.all-ads {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 30px;
+}
+
+.ad {
+    width: 100%;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+
+.ad .ad1 {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.ad .ad1:hover {
+    transform: scale(0.99);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .13);
+}
+
+.ad1 .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: left;
+    padding-top: 25px;
+}
+
+.ad1 .info-container h3 {
+    width: 100%;
+    padding: 30px 10px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #000000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.ad1 .info-container button {
+    background: #46a2fd;
+    border: 1px solid #46a2fd;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.ad1 .info-container button:hover {
+    transform: scale(1.05);
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #777777;
+}
+
+.ad1 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.ad1:hover .img-container img {
+    transform: scale(1.05);
+}
+
+
+/*--------------------------- CONTENIDO DE TODO (PAYMENT) ---------------------- */
+
+.ctn-payment {
+    width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+/*----------------------------- METODOS DE PAGO (RECUADRO) ----------------------*/
+
+.forms {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.pay {
+    width: 100%;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+
+.pay .pay1 {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    *display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    transition: all 0.5s;
+}
+
+.pay .pay1:hover {
+    transform: scale(0.99);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .13);
+}
+
+.pay1 .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: left;
+    *padding-top: 25px;
+    *background: #777777;
+}
+
+.pay1 .info-container h3,
+.pay1 .info-container p,
+.pay1 .info-container a {
+    width: 100%;
+    display: block;
+    margin: auto 30px;
+    text-align: left;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#pay-store {
+    text-align: left;
+    color: #777777;
+    font-size: 16px;
+    *text-transform: uppercase;
+}
+
+#conditions-store {
+    text-align: left;
+    color: #46a2fd;
+    font-size: 16px;
+}
+
+.pay1 img {
+    width: 120px;
+    display: block;
+    margin: auto;
+    transition: all 0.5s;
+}
+
+.pay1:hover .img-container img {
+    transform: scale(1.1);
+}
+
+
+
+/* --------------------RESPONSIVE DESIGN - ADAPTADO A DISPOSITIVOS MOVILES -------------------- */
+
+@media screen and (max-width: 1220px) {
+    .ads {
+        padding: 0 20px;
+    }
+
+    .ads {
+        width: 100%;
+    }
+
+    .ctn-payment {
+        padding: 0 20px;
+    }
+
+    .ctn-payment {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .ads {
+        width: 100%;
+    }
+
+    .all-ads {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .ctn-payment {
+        width: 100%;
+    }
+
+    .pay .pay1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pay1 .info-container {
+        margin: 10px;
+    }
+
+    .pay1 .info-container h3,
+    #pay-store,
+    #conditions-store {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .ad .ad1 {
+        display: block;
+        padding-bottom: 70px;
+    }
+
+    .ad1 .info-container,
+    .ad1 .info-container h3 {
+        text-align: center;
+        justify-content: center;
+    }
+}

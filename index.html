@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-with, user-scaleable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" href="../img/icon.png">
+	<title>Business Store</title>
+	<script src="https://kit.fontawesome.com/4f3d9f8b10.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/principal.css">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+	<!----------------------------- HEADER / MENU / BUSCADOR --------------------------->
+	<header>
+		<div class="header-content">
+			<div class="logo">
+				<h1><a href="index.html">Business <b>Store<p>®</p></b></a></h1>
+			</div>
+			<div class="menu" id="show-menu">
+				<nav>
+					<ul>
+						<li class="menu-selected"><a href="index.html" class="text-menu-selected"><i
+									class="fa-solid fa-house"></i>Inicio</a></li>
+						<li><a href="products.html"><i class="fa-solid fa-store"></i>Productos</a></li>
+						<li><a href="login.html"><i class="fa-solid fa-user"></i>Iniciar sesión</a></li>
+						<li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Carrito</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="ctn-icon-search">
+				<i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+			</div>
+		</div>
+		<div id="icon-menu">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+	</header>
+
+	<!------------------------------- CUADRO DE BUSQUEDA ----------------------->
+	<div id="ctn-bars-search">
+		<input type="text" id="inputSearch" placeholder="Ir a inicio, ver productos, iniciar sesión y más...">
+	</div>
+
+	<!------------------------------- SUGERENCIAS DE BUSQUEDA ----------------------->
+	<ul id="box-search">
+		<div id="li-box-search">
+			<li><a href="index.html"><i class="fa-solid fa-magnifying-glass"></i>Ir a inicio</a></li>
+			<li><a href="products.html"><i class="fa-solid fa-magnifying-glass"></i>Ver productos</a></li>
+			<li><a href="login.html"><i class="fa-solid fa-magnifying-glass"></i>Iniciar sesión</a></li>
+			<li><a href="cart.html"><i class="fa-solid fa-magnifying-glass"></i>Ver carrito</a></li>
+		</div>
+	</ul>
+
+	<!------------------------------------------------------>
+	<div id="cover-ctn-search"></div>
+
+
+	<div class="container-all" id="move-content">
+
+		<!---------------------------- PRESENTACION / IMAGENES ----------------------------->
+		<div class="container-cover">
+			<div class="container-info-cover">
+				<h1>¡Aprovecha todas las ofertas de este mes!</h1>
+				<p>Consulta términos y condiciones en Business Store</p>
+			</div>
+		</div>
+
+
+		<!---------------------------- ANUNCIOS / VER MÁS (ROLEX-TV) ----------------------------->
+		<div class="ads">
+			<div class="caption">
+				<p>Descubre<i class="fa-solid fa-face-grin"></i></p>
+			</div>
+			<div class="see-products">
+				<section class="all-ads">
+					<div class="ad">
+						<div class="ad1">
+							<div class="info-container">
+								<h3>Lo que buscas esta aquí</h3>
+								<a href="products.html"><button>Ver más</button></a>
+							</div>
+							<a href="products.html">
+								<div class="img-container">
+									<img src="../img/inicio/rolex-oro.png">
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="ad">
+						<div class="ad1">
+							<div class="info-container">
+								<h3>Novedades del mes</h3>
+								<a href="products.html"><button>Ver más</button></a>
+							</div>
+							<a href="products.html">
+								<div class="img-container">
+									<img src="../img/inicio/tv.jpg">
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<!------------------------ METODO DE PAGO (CITIBANAMEX)) ------------------------->
+		<div class="ctn-payment">
+			<div class="payment">
+				<section class="forms">
+					<div class="pay">
+						<div class="pay1">
+							<div class="info-container">
+								<h3>Paga cómodo y seguro</h3>
+								<p id="pay-store">con Bussines Store</p>
+							</div>
+							<div class="info-container">
+								<h3>Hasta con 3 meses sin intereses con:</h3>
+								<a href="#" id="conditions-store">Ver condiciones</a>
+							</div>
+							<div class="img-container">
+								<img src="../img/inicio/Citibanamex-logo.png">
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<!------------------------------ PIE DE PAGINA -------------------------------------->
+		<div class="container-footer">
+			<footer>
+				<div class="logo-footer">
+					<h2><a>B<b>S<p>®</p></b></a></h2>
+				</div>
+				<div class="redes-footer">
+					<a href="#"><i class="fa-brands fa-facebook icon-redes-footer"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+					<a href="#"><i class="fa-brands fa-whatsapp icon-redes-footer"></i></a>
+				</div>
+
+				<hr>
+				<h4>© 2022 Business Store - Todos los Derechos Reservados</h4>
+			</footer>
+		</div>
+
+	</div>
+
+	<script src="../js/script.js"></script>
+</body>
+
+</html>

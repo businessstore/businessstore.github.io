@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2? family= Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400; 1600;1700;1900 & mostrar=intercambiar');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background: #f6f6f6;
+}
+
+
+/*----------------------------- ENCABEZADO ------------------------------------*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 10;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+/*------------------------------ LOGO SUPERIOR --------------------------------*/
+
+.logo {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 a {
+    color: #000000;
+}
+
+.logo h1 b {
+    color: #46a2fd;
+}
+
+.logo h1 b p {
+    font-size: 10px;
+    padding-top: 5px;
+    float: right;
+    color: #000000;
+}
+
+
+/*---------------------------------- BARRA DE MENU HORIZONTAL SUPERIOR------------------- */
+
+.menu {
+    height: 80px;
+    margin-right: 60px;
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav>ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav>ul>li {
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-selected:before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #46a2fd;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav>ul>li>a {
+    color: #777777;
+    font-size: 18px;
+    transition: all 300ms ease;
+}
+
+.menu nav>ul>li>a:hover {
+    transform: scale(1.1);
+    color: #46a2fd;
+}
+
+.menu nav ul li a i {
+    display: none;
+}
+
+.menu .text-menu-selected {
+    color: #46a2fd;
+}
+
+/*---------------------------------------- ICONO DE MENU -----------------------------------------*/
+
+#icon-menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 100%;
+    color: #787878;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+#icon-menu:hover {
+    transform: scale(1.1);
+    background: #f6f6f6;
+    color: #46a2fd;
+}
+
+
+/*---------------------------- BUSCADOR DE PRODUCTOS  -----------------------------*/
+
+#ctn-icon-search {
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ctn-icon-search i {
+    font-size: 18px;
+    color: #777777;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#ctn-icon-search i:hover {
+    transform: scale(1.1);
+    color: #46a2fd;
+}
+
+#ctn-bars-search {
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    padding: 20px;
+    z-index: 9;
+    transition: all 600ms;
+}
+
+#ctn-bars-search input {
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: #777777 1px solid;
+    font-size: 18px;
+    outline: 0;
+    transition: all 0.5s;
+}
+
+#ctn-bars-search input:hover {
+    transform: scale(0.99);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+#box-search {
+    position: fixed;
+    top: 160px;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 8;
+    list-style: none;
+    overflow: hidden;
+    display: none;
+}
+
+#li-box-search {
+    width: 1200px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+#li-box-search:hover {
+    transform: scale(0.99);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+#box-search li a {
+    display: block;
+    color: #777777;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: all 300ms ease;
+}
+
+#box-search li a:hover {
+    padding-left: 30px;
+    background: #f3f3f3;
+    color: #46a2fd;
+}
+
+#box-search li a i {
+    margin-right: 10px;
+    color: #46a2fd;
+}
+
+#cover-ctn-search {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 7;
+    display: none;
+}
+
+
+/*---------------------------- PRESENTACION O PORTADA (IMAGENES)  -----------------------------*/
+
+.container-cover {
+    width: 100%;
+    height: 370px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-cover:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 172, 255, 0.8);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-info-cover {
+    max-width: 800px;
+    height: 370px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-info-cover h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container-info-cover p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/*------------------------------------------ PIE DE PAGINA --------------------------------*/
+
+.container-footer {
+    width: 100%;
+    padding: 40px 0;
+    background: #fff;
+    margin-top: 40px;
+}
+
+.container-footer footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer {
+    width: 100px;
+    height: 100px;
+    display: table;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-width: medium;
+    background: #000000;
+    border-color: #46a2fd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer footer .logo-footer h2 a {
+    color: #fff;
+}
+
+.container-footer footer .logo-footer h2 b {
+    color: #46a2fd;
+}
+
+.container-footer footer .logo-footer h2 p {
+    font-size: 10px;
+    position: absolute;
+    display: inline;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.container-footer footer .redes-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer {
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+    transition: all 300ms ease;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+}
+
+.container-footer footer .redes-footer .fa-facebook:hover {
+    background: #3b5998;
+    color: #ffffff;
+}
+
+.container-footer footer .redes-footer .fa-instagram:hover {
+    background: linear-gradient(to top right, #fcde30, #e9712a, #d2313b, #ae4198, #7540a1, #5443ab);
+    color: #ffffff;
+}
+
+.container-footer footer .redes-footer .fa-whatsapp:hover {
+    background: #00bb2d;
+    color: #ffffff;
+}
+
+.container-footer footer hr {
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #c0c0c07a;
+}
+
+.container-footer h4 {
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-weight: 500;
+}
+
+
+/*--------------------RESPONSIVE DESIGN - ADAPTADO A DISPOSITIVOS MOVILES -------------------- */
+
+@media screen and (max-width: 1220px) {
+
+    .header-content,
+    .container-footer footer {
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+    #ctn-bars-search,
+    #ctn-bars-search input,
+    #li-box-search,
+    #box-search li a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    /*------------------------------ CAMBIO DE TAMAÑO DE LA PORTADA ------------------*/
+    .container-cover {
+        height: 250px;
+        transition: all 300ms;
+    }
+
+    .container-info-cover {
+        max-width: 600px;
+        height: 250px;
+        transition: all 300ms;
+    }
+
+    .container-info-cover h1 {
+        font-size: 30px;
+        font-weight: 250;
+    }
+
+    .container-info-cover p {
+        font-size: 14px;
+        font-weight: 150;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .logo {
+        margin-left: 50px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container-all {
+        transition: all 300ms cubic-bezier(1, 0, 0, 1);
+    }
+
+    .move-container-all {
+        transform: translateX(300px);
+    }
+
+    .menu {
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: #fff;
+        overflow: hidden;
+        transform: translateX(-350px);
+        box-shadow: 10px 0 20px -25px black;
+        transition: all 300ms cubic-bezier(1, 0, 0, 1);
+    }
+
+    .show-lateral {
+        width: 300px;
+        transform: translateX(0px);
+    }
+
+    .menu nav ul {
+        flex-direction: column;
+    }
+
+    .menu nav ul li {
+        max-width: 250px;
+        height: 50px;
+        justify-content: flex-start;
+    }
+
+    .menu-selected:before {
+        width: 0;
+    }
+
+    .menu nav ul li a {
+        width: 100%;
+        padding: 20px 0;
+        margin-top: 40px;
+        color: #858585;
+    }
+
+    .menu nav ul li a:hover {
+        padding-left: 25px;
+    }
+
+    .menu nav ul li a i {
+        width: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        color: #46a2fd;
+    }
+
+    #icon-menu {
+        display: flex;
+        *right: 60px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    /*------------------------------ CAMBIO DE TAMAÑO DE LA PORTADA ------------------*/
+    .container-cover {
+        height: 170px;
+        transition: all 300ms;
+    }
+
+    .container-info-cover {
+        max-width: 250px;
+        height: 170px;
+        transition: all 300ms;
+    }
+
+    .container-info-cover h1 {
+        font-size: 25px;
+        font-weight: 125;
+    }
+
+    .container-info-cover p {
+        font-size: 12px;
+        font-weight: 125;
+    }
+}

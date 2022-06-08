@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-with, user-scaleable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" href="../img/icon.png">
+	<title>Iniciar sesión | Business Store</title>
+	<script src="https://kit.fontawesome.com/4f3d9f8b10.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/principal.css">
+	<link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+	<!----------------------------- HEADER / MENU / BUSCADOR --------------------------->
+	<header>
+		<div class="header-content">
+			<div class="logo">
+				<h1><a href="index.html">Business <b>Store<p>®</p></b></a></h1>
+			</div>
+			<div class="menu" id="show-menu">
+				<nav>
+					<ul>
+						<li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+						<li><a href="products.html"><i class="fa-solid fa-store"></i>Productos</a></li>
+						<li class="menu-selected"><a href="login.html" class="text-menu-selected"><i
+									class="fa-solid fa-user"></i>Iniciar sesión</a></li>
+						<li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Carrito</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="ctn-icon-search">
+				<i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+			</div>
+		</div>
+		<div id="icon-menu">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+	</header>
+
+	<!------------------------------- CUADRO DE BUSQUEDA ----------------------->
+	<div id="ctn-bars-search">
+		<input type="text" id="inputSearch" placeholder="Ir a inicio, ver productos, iniciar sesión y más...">
+	</div>
+
+	<!------------------------------- SUGERENCIAS DE BUSQUEDA ----------------------->
+	<ul id="box-search">
+		<div id="li-box-search">
+			<li><a href="index.html"><i class="fa-solid fa-magnifying-glass"></i>Ir a inicio</a></li>
+			<li><a href="products.html"><i class="fa-solid fa-magnifying-glass"></i>Ver productos</a></li>
+			<li><a href="login.html"><i class="fa-solid fa-magnifying-glass"></i>Iniciar sesión</a></li>
+			<li><a href="cart.html"><i class="fa-solid fa-magnifying-glass"></i>Ver carrito</a></li>
+		</div>
+	</ul>
+
+	<!-------------------------------  ----------------------->
+	<div id="cover-ctn-search"></div>
+
+
+	<div class="container-all" id="move-content">
+
+		<!------------------------------ INICIAR SESION -------------------------------------->
+		<div class="container-login-register">
+			<div class="container-login">
+				<form action="" class="formulario-login">
+					<div class="ctn-sup-login">
+						<h2>Iniciar sesión ahora</h2>
+						<p>Aprovecha al máximo Business Store.com</p>
+						<input type="text" placeholder="Correo Electronico">
+						<input type="password" placeholder="Contraseña">
+						<a href="#">
+							<p>¿Olvidaste tu contraseña?</p>
+						</a>
+						<button>Entrar</button>
+					</div>
+					<div class="ctn-inf-checkin">
+						<p>¿No tienes una cuenta?</p>
+						<button>Crear cuenta</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!------------------------------ PIE DE PAGINA -------------------------------------->
+		<div class="container-footer">
+			<footer>
+				<div class="logo-footer">
+					<h2><a>B<b>S<p>®</p></b></a></h2>
+				</div>
+				<div class="redes-footer">
+					<a href="#"><i class="fa-brands fa-facebook icon-redes-footer"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+					<a href="#"><i class="fa-brands fa-whatsapp icon-redes-footer"></i></a>
+				</div>
+
+				<hr>
+				<h4>© 2022 Business Store - Todos los Derechos Reservados</h4>
+			</footer>
+		</div>
+
+	</div>
+
+	<script src="../js/script.js"></script>
+</body>
+
+</html>

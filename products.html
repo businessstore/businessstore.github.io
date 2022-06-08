@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-with, user-scaleable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="../img/icon.png">
+    <title>Productos | Business Store</title>
+    <script src="https://kit.fontawesome.com/4f3d9f8b10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+
+<body>
+    <!----------------------------- HEADER / MENU / BUSCADOR --------------------------->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1><a href="index.html">Business <b>Store<p>®</p></b></a></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                        <li class="menu-selected"><a href="products.html" class="text-menu-selected"><i
+                                    class="fa-solid fa-store"></i>Productos</a></li>
+                        <li><a href="login.html"><i class="fa-solid fa-user"></i>Iniciar sesión</a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Carrito</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="ctn-icon-search">
+                <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!------------------------------- CUADRO DE BUSQUEDA ----------------------->
+    <div id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="Buscar productos, marcas y más...">
+    </div>
+
+    <!------------------------------- SUGERENCIAS DE BUSQUEDA ----------------------->
+    <ul id="box-search">
+        <div id="li-box-search">
+            <li><a href="index.html"><i class="fa-solid fa-magnifying-glass"></i>Ir a inicio</a></li>
+            <li><a href="products.html"><i class="fa-solid fa-magnifying-glass"></i>Ver productos</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-magnifying-glass"></i>Iniciar sesión</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-magnifying-glass"></i>Ver carrito</a></li>
+
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Rolex de oro</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Esclava de oro</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Rolex de plata</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Pantalon de mezclilla talla 30</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Playera negra talla M</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Caminadora Sporteam</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Juego de pesas</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Escritorio de madera</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Television de 40 pulgadas 4k</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Huevos 30pz</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Aceite de Oliva 750ml</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Boing de guayaba 354ml</a></li>
+        </div>
+    </ul>
+
+    <!-------------------------------  ----------------------->
+    <div id="cover-ctn-search"></div>
+
+    <div class="container-all" id="move-content">
+
+        <!---------------------------- PRESENTACION / IMAGENES ----------------------------->
+        <div class="container-cover">
+            <div class="container-info-cover">
+                <h1>¡Aprovecha todas las ofertas de este mes!</h1>
+                <p>Consulta términos y condiciones en Business Store</p>
+            </div>
+        </div>
+
+        <!------------------ CATEGORIAS / SEPARADOR / LISTA DE PRODUCTOS ------------------->
+        <div class="container-post">
+            <div class="caption">
+                <p>encuentra tus productos</p>
+            </div>
+            <input type="radio" id="TODOS" name="categories" value="TODOS">
+            <input type="radio" id="JOYERIA" name="categories" value="JOYERIA">
+            <input type="radio" id="SUPERMERCADO" name="categories" value="SUPERMERCADO">
+            <input type="radio" id="MODA" name="categories" value="MODA">
+            <input type="radio" id="DEPORTES" name="categories" value="DEPORTES">
+            <input type="radio" id="HOGAR" name="categories" value="HOGAR">
+            <div class="container-category">
+                <label for="TODOS">Todos</label>
+                <label for="JOYERIA">Joyería</label>
+                <label for="MODA">Moda</label>
+                <label for="DEPORTES">Deportes y Fitness</label>
+                <label for="HOGAR">Hogar</label>
+                <label for="SUPERMERCADO">Supermercado</label>
+            </div>
+            <div class="posts">
+                <section>
+                    <div class="post" data-category="JOYERIA">
+                        <div class="post-interior">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="../img/produtos/joyeria/rolex-oro.png"
+                                        alt="Imagen de un reloj Rolex de oro">
+                                </div>
+                            </a>
+                            <div class="info-container">
+                                <h3>Rolex de oro</h3>
+                                <strong>$189,549.89</strong>
+                                <span class="rating">★★★★☆</span>
+                                <a href="#" class="add-cart">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post" data-category="JOYERIA">
+                        <div class="post-interior">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="../img/produtos/joyeria/esclava.jpg" alt="Imagen de un esclava dorada">
+                                </div>
+                            </a>
+                            <div class="info-container">
+                                <h3>Esclava de oro</h3>
+                                <strong>$89,549.89</strong>
+                                <span class="rating">★★★★☆</span>
+                                <a href="#" class="add-cart">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post" data-category="JOYERIA">
+                        <div class="post-interior">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="../img/produtos/joyeria/rolex-plata.png"
+                                        alt="Imagen de un reloj Rolex de plata">
+                                </div>
+                            </a>
+                            <div class="info-container">
+                                <h3>Rolex de plata</h3>
+                                <strong>$143,549.89</strong>
+                                <span class="rating">★★★★☆</span>
+                                <a href="#" class="add-cart">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post" data-category="MODA">
+                        <div class="post-interior">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="../img/produtos/moda/pantalon.jpg"
+                                        alt="Imagen de una pantalón de mezclilla talla 30">
+                                </div>
+                            </a>
+                            <div class="info-container">
+                                <h3>Pantalon de mezclilla talla 30</h3>
+                                <strong>$299.89</strong>
+                                <span class="rating">★★★★☆</span>
+                                <a href="#" class="add-cart">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post" data-category="MODA">
+                        <div class="post-interior">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="../img/produtos/moda/playera.jpg"
+                                        alt="Imagen de una botella de boing 354ml">
+                                </div>
+                            </a>
+                            <div class="info-container">
+                                <h3>Playera negra talla M</h3>
+                                <strong>$199.49</strong>
+                                <span class="rating">★★★★☆</span>
+                                <a href="#" class="add-cart">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post" data-category="DEPORTES">
+                        <div class="post-interior">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="../img/produtos/deportesyfitness/caminadora.jpg"
+                                        alt="Imagen de una caminadora electrica Sporteam">
+                                </div>
+                            </a>
+                            <div class="info-container">
+                                <h3>Caminadora Sporteam</h3>
+                                <strong>$7,499.49</strong>
+                                <span class="rating">★★★★☆</span>
+                                <a href="#" class="add-cart">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post" data-category="DEPORTES">
+                        <div class="post-interior">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="../img/produtos/deportesyfitness/pesas.jpg"
+                                        alt="Imagen de un Juego de pesas">
+                                </div>
+                            </a>
+                            <div class="info-container">
+                                <h3>Juego de pesas</h3>
+                                <strong>$3,499.89</strong>
+                                <span class="rating">★★★★☆</span>
+                                <a href="#" class="add-cart">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post" data-category="HOGAR">
+                        <div class="post-interior">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="../img/produtos/hogarymuebles/escritorio.jpg"
+                                        alt="Imagen de un escritorio de madera 150x89cm">
+                                </div>
+                            </a>
+                            <div class="info-container">
+                                <h3>Escritorio de madera</h3>
+                                <strong>$1,449.89</strong>
+                                <span class="rating">★★★★☆</span>
+                                <a href="#" class="add-cart">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post" data-category="HOGAR">
+                        <div class="post-interior">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="../img/produtos/hogarymuebles/tv.jpg"
+                                        alt="Imagen de una Television de 40 pulgadas">
+                                </div>
+                            </a>
+                            <div class="info-container">
+                                <h3>Television de 40 pulgadas 4k</h3>
+                                <strong>$8,799.89</strong>
+                                <span class="rating">★★★★☆</span>
+                                <a href="#" class="add-cart">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post" data-category="SUPERMERCADO">
+                        <div class="post-interior">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="../img/produtos/supermercado/huevos.jpg"
+                                        alt="Imagen de una caja de huevos 30pz">
+                                </div>
+                            </a>
+                            <div class="info-container">
+                                <h3>Huevos 30pz</h3>
+                                <strong>$60.00</strong>
+                                <span class="rating">★★★★☆</span>
+                                <a href="#" class="add-cart">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post" data-category="SUPERMERCADO">
+                        <div class="post-interior">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="../img/produtos/supermercado/aceitedeoliva.jpg"
+                                        alt="Imagen de una botella de aceite de oliva 750ml">
+                                </div>
+                            </a>
+                            <div class="info-container">
+                                <h3>Aceite de Oliva 750ml</h3>
+                                <strong>$110.00</strong>
+                                <span class="rating">★★★★☆</span>
+                                <a href="#" class="add-cart">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post" data-category="SUPERMERCADO">
+                        <div class="post-interior">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="../img/produtos/supermercado/boing.jpg"
+                                        alt="Imagen de una botella de boing 354ml">
+                                </div>
+                            </a>
+                            <div class="info-container">
+                                <h3>Boing de guayaba 354ml</h3>
+                                <strong>$10.00</strong>
+                                <span class="rating">★★★★☆</span>
+                                <a href="#" class="add-cart">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!------------------------------ PIE DE PAGINA -------------------------------------->
+        <div class="container-footer">
+            <footer>
+                <div class="logo-footer">
+                    <h2><a>B<b>S<p>®</p></b></a></h2>
+                </div>
+                <div class="redes-footer">
+                    <a href="#"><i class="fa-brands fa-facebook icon-redes-footer"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp icon-redes-footer"></i></a>
+                </div>
+
+                <hr>
+                <h4>© 2022 Business Store - Todos los Derechos Reservados</h4>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
